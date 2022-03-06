@@ -1,9 +1,4 @@
 // Existing Code
-var monster = {
-    id: 1,
-    name: "Bulbasaur",
-    types: ["poison", "grass"]
-};
 
 var pokémon = [
     { "id": 1,   "name": "Bulbasaur",  "types": ["poison", "grass"] },
@@ -31,55 +26,45 @@ var pokémon = [
     { "id": 148, "name": "Dragonair",  "types": ["dragon"] }
 ];
 
-// for(var i=0; i<pokémon.length; i++) {
-//     if(pokémon[i].id > 99) {
-//         console.log(pokémon[i].name);
-//     }
-// }
-
-// My Code
-
 // Challenge 1
 // console.log the pokémon objects whose id is evenly divisible by 3
-// for (var i=0; i<pokémon.length; i++) {
-//     if(pokémon[i].id % 3 == 0) {
-//         console.log(pokémon[i].name);
-//     }
-// }
+for (var i=0; i<pokémon.length; i++) {
+    if(pokémon[i].id % 3 == 0) {
+        console.log(pokémon[i].name);
+    }
+}
 
 // Challenge 2 - help
 // console.log the pokémon objects that have more than one type
-// for (var i=0; i<pokémon.length; i++) {
-//     if(pokémon[i].types == 1) {
-//         console.log(pokémon[i].name);
-//     }
-// }
+for (var i=0; i<pokémon.length; i++) {
+    if(pokémon[i].types[1]) {
+        console.log(pokémon[i]);
+    }
+}
 
 // Challenge 3
 // console.log the names of the pokémon whose only type is "poison"
-// for (var i=0; i<pokémon.length; i++) {
-//     if(pokémon[i].types == "poison") {
-//         console.log(pokémon[i].name);
-//     }
-// }
+for (var i=0; i<pokémon.length; i++) {
+    if(pokémon[i].types == "poison") {
+        console.log(pokémon[i].name);
+    }
+}
 
-// Challenge 4 - help
+// Challenge 4
 // console.log the first type of all the pokémon whose second type is "flying"
-// for (var i=0; i<pokémon.length; i++) {
-//     if(pokémon[i].types == "flying") {
-//         console.log(pokémon[i].name);
-//     }
-// }
+for (var i=0; i<pokémon.length; i++) {
+    if(pokémon[i].types[1] == "flying") {
+        console.log(pokémon[i].types[0]);
+    }
+}
 
 // Challenge 5 - help
 // console.log the reverse of the names of the pokémon whose only type is "poison"
-function poisonrev () {
-    var poison = [];
-    for (var i=0; i<pokémon.length; i++) {
-        if(pokémon[i].types == "poison") {
-            poison.push(pokémon[i].name);
-        }
+var poison = [];
+
+for (var i=0; i<pokémon.length; i++) {
+    if(pokémon[i].types == "poison") {
+        poison.push(pokémon[i].name);
     }
 }
-console.log(poison)
-poison.reverse();
+console.log(poison.reverse());
