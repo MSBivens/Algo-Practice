@@ -100,6 +100,10 @@ function reverse(arr) {
 var result = reverse(["a", "b", "c", "d", "e"]);
 console.log(result); // we expect back ["e", "d", "c", "b", "a"]
 
+// Reversed Strings
+// Reverses the string passed into it
+const solution = str => str.split('').reverse().join('');
+
 // Fibonacci Array
 // Write a function that will return an array of Fibonacci numbers up to a given length n.
 function fibonacciArray(n) {
