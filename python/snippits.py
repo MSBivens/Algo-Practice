@@ -11,3 +11,12 @@ def check(seq, elem):
 # Ex [1, 2, 3] -> [2, 4, 6]
 def maps(a):
     return [x * 2 for x in a]
+
+# Simple multiplication, multiply num by 8 if num == even, by 9 if == odd
+def simple_multiplication(number) :
+    return number * 9 if number % 2 else number * 8
+
+# Innert Values
+# Given a set of numbers, return the additive inverse of each. Each positive becomes negatives, and the negatives become positives.
+def invert(lst):
+    return [-i for i in lst]
