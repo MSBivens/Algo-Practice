@@ -131,3 +131,17 @@ function numberToString(num) {
 function areYouPlayingBanjo(name) {
     return name + (name[0].toLowerCase() == 'r' ? ' plays' : ' does not play') + " banjo";
 }
+
+// Find the smallest integer in an array
+class SmallestIntegerFinder {
+    findSmallestInt(args) {
+        const arr = args
+        const min = Math.min(...arr)
+        return min
+    }
+}
+
+// Convert Boolean to a string
+function booleanToString(b){
+    return b.toString();
+}
