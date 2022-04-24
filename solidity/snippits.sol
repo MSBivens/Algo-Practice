@@ -1,5 +1,8 @@
 // Count by x
 // Create a function with two arguments that will return an array of the first (n) multiples of (x). Return as an array
+pragma solidity ^0.4.19;
+
+
 contract CountByX {
 
     function countBy(int x, int n) view returns (int[]) {
@@ -11,7 +14,6 @@ contract CountByX {
     }
 }
 
-// Clock
 // Clock shows h hours, m minutes and s seconds after midnight.
 // Write a function which returns the time since midnight in milliseconds.
 pragma solidity ^0.4.19;
@@ -19,5 +21,31 @@ pragma solidity ^0.4.19;
 contract Kata {
     function past(uint h, uint m, uint s) public pure returns (uint) {
         return 1000*(h*3600+m*60+s);
+    }
+}
+
+// String repeat
+// Write a function called repeatStr which repeats the given string string exactly n times.
+pragma solidity ^0.4.19;
+
+contract Repeater {
+    function multiply(uint8 repeat, string pattern) returns (string) {
+        uint patternLen = bytes(pattern).length;
+        uint resultLen = patternLen * repeat;
+        bytes memory result = new bytes(resultLen);
+        for(uint i = 0; i < resultLen; i++) {
+            result[i] = bytes(pattern)[i % patternLen];
+        }
+        return string(result);
+    }
+}
+
+// Third angle of a triangle
+// Given two interior angles (in degress) of a triangle, write a function to return third
+pragma solidity ^0.4.19;
+
+contract ThirdAngle {
+    function otherAngle(int angle1, int angle2) returns (int) {
+        return 180-(angle1+angle2);
     }
 }
