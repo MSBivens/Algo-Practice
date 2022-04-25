@@ -20,3 +20,7 @@ def simple_multiplication(number) :
 # Given a set of numbers, return the additive inverse of each. Each positive becomes negatives, and the negatives become positives.
 def invert(lst):
     return [-i for i in lst]
+
+# Convert string to a number
+def string_to_number(s):
+    return int(s)
