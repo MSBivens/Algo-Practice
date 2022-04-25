@@ -145,3 +145,9 @@ class SmallestIntegerFinder {
 function booleanToString(b){
     return b.toString();
 }
+
+// DNA to RNA Conversion
+// EX "GCAT"  =>  "GCAU"
+function DNAtoRNA(dna) {
+    return dna.replace(/T/g, 'U');
+}
