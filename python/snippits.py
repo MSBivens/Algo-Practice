@@ -33,3 +33,7 @@ def rps(p1, p2):
     if beats[p2] == p1:
         return "Player 2 won!"
     return "Draw!"
+
+# Convert boolean values to strings 'Yes' for true or 'No' for false.
+def bool_to_word(boolean):
+    return "Yes" if boolean else "No"
