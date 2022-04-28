@@ -154,3 +154,8 @@ function DNAtoRNA(dna) {
 
 // Function that takes speed in km/hr and returns it in cm/s rounded down to the integer
 const speed = s => Math.floor(s/0.036);
+
+// Squres each number passed into it and then sums the results
+function squareSum(numbers){
+    return numbers.reduce((sum,num) => sum + (num * num), 0);
+}
