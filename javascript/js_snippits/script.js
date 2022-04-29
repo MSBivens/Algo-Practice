@@ -159,3 +159,8 @@ const speed = s => Math.floor(s/0.036);
 function squareSum(numbers){
     return numbers.reduce((sum,num) => sum + (num * num), 0);
 }
+
+// Receive an array scores, calculate average, return True if you scored better, False if not
+function betterThanAverage(classPoints, yourPoints) {
+    return yourPoints > classPoints.reduce((a, b) => a + b, 0) / classPoints.length;
+}  
